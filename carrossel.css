@@ -1,0 +1,32 @@
+.carrossel-edit{
+    padding-top: 180px;
+    padding-bottom: 270px;
+    background-color: black;
+    
+}
+
+.carousel-inner{
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+/* TELA GRANDE */
+@media screen and (min-width: 48em){
+    .carousel-inner{
+        width: 10px;
+        height: 749px;
+        max-width: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .carrossel-edit{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        background-size: cover;
+        background-attachment: fixed;
+}
+}

@@ -1,0 +1,215 @@
+body{
+    font-family: sans-serif;
+    background-color: #0D0D0D;
+}
+
+.header{
+    text-align: center;
+    margin: 0;
+    background-color: #0D0D0D;
+}
+
+.header_logo{
+    width: 5em;
+    height: auto;
+    font-size: 30px;
+}
+
+.edit-logo{
+    display: flex;
+    justify-content: center;
+    color: #c4c4c4;
+}
+
+.edit-logo:hover{
+    cursor: pointer;
+    color: #0707ff;
+}
+
+.header_nav{
+    background-color: #c4c4c4;
+    color: white;
+    display: none;
+    height: 180px;
+}
+
+.header_nav.show{
+    display: block;
+}
+
+ul{
+    margin: 0;
+}
+
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+}
+
+.header_nav a{
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover{
+    background-color: color-mix(in srgb, #ffffff00, #ffffff 50%);
+    color: black;
+}
+
+#hamburguer{
+    background-color: #c4c4c4;
+    color: #0D0D0D;
+    display: block;
+    text-align: center;
+    padding: .3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.foto-inicial{
+    background-image: url(background-blue.jpg);
+    height: 720px;
+    background-size: cover;
+    padding-top: 1px;
+    background-attachment: fixed;
+}
+
+.button-glry{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 110px;               /* largura para o botão */
+    height: 50px;              /* altura para o botão */
+    padding: 20px;
+    margin: 0px 0 0 -50px;   /* margem à esquerda e ao topo metade da medida do botão */
+    border: 0 none;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #000000a1;
+    color: white;
+    font-family: 'Borel', cursive;
+}
+
+.button-glry:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+footer{
+    padding: 30px;
+    background-color: #c4c4c4;
+    text-transform: uppercase;
+    text-align: center;
+    width: auto;
+    height: 410px;
+}
+
+footer b{
+    padding: 1px;
+    font-size: 14px;
+    color: #0c0c0c80;
+}
+
+.icons-social{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+    margin: auto;
+    height: 9px;
+    width: 14px; 
+}
+
+.icons-social:hover{
+    cursor: pointer;
+}
+
+.tamanho-icon{
+    width: 30px;
+}
+
+/* TELA GRANDE */
+@media screen and (min-width: 48em){
+
+    #hamburguer{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0D0D0D;
+        height: 80px;
+    }
+
+    .header_logo{
+        margin-left: 2em;
+    }
+
+    .header_nav{
+        display: block;
+        height: auto;
+        background-color: #000000;
+    }
+
+    .header_nav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+    .header_nav li{
+        display: inline-block;
+    }
+
+    .header_nav a{
+        border-radius: 5px;
+        color: white;
+    }
+
+    .header_nav a:hover{
+        background-color: #666565;
+        color: #ffffff;
+    }
+
+    .header{
+        text-align: center;
+        margin: auto;
+        background-color: #0D0D0D;
+    }
+
+    .icons-social{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        width: auto;
+        height: auto;
+    }
+
+    footer{
+        padding: 30px;
+        background-color: #c4c4c4;
+        text-transform: uppercase;
+        text-align: center;
+        width: auto;
+        height: auto;
+    }
+
+    footer b{
+        padding: 1px;
+        font-size: 15px;
+        color: #0c0c0c80;
+    }
+
+    .button-glry{
+        margin: 0px 0 0 -60px;
+    }
+}
